@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Side</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script type="text/javascript" src = "/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+	<img id = "play">
+	<div id = "logger"></div>
+
+	<script type="text/javascript">
+		var socket = io();
+		socket.on("stream",function(image){
+			var img = document.getElementById("play");
+			img.src = image;
+			//$("#logger").text(image);
+		})
+
+	</script>
+
+</body>
+</html>

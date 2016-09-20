@@ -1,2 +1,2 @@
 # LiveChat
-Nodejs video chat project
+Simple NodeJS video chat project
